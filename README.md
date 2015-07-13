@@ -25,8 +25,13 @@
 	  -- save changments
           -- close nautilus
 	$ctrl+c
+	
+4. install js dependencies:
+       -- go to PROJECT_FOLDER/webapp/webapp/static 
+       -- run bower install
+    
 
-4. syncdb
+5. syncdb
 
 	$ python manage.py syncdb
 
@@ -36,11 +41,11 @@
 
 	$ python manage.py create_notices
 
-5. run application
+6. run application
 	python manage.py runserver
 
 
 
-6. crontab configuration
+7. crontab configuration
 */2 * * * * python PATH_TO_THE_APP/manage.py emit_notices
 0 9 * * * python PATH_TO_THE_APP/manage.py check_temporal_matches
